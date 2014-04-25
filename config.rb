@@ -101,15 +101,14 @@ configure :build do
 
   # リポジトリ名を host に設定しておく
   # こうすることで stylesheet_link_tag などで展開されるパスが
-  # /mm/stylesheets/normalize.css
+  # /my_project/stylesheets/normalize.css
   # のようになる
-  activate :asset_host, :host => "/mm"
+  # activate :asset_host, :host => "/my_project"
 end
 
-# デプロイの設定
-# 今回は gh-pages を使用するので branch に 'gh-pages' を設定する
+# デプロイ設定
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.method = :git
-  deploy.branch = 'gh-pages'
+  deploy.branch = 'master'
 end
