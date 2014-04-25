@@ -8,6 +8,39 @@
   </head>
   <body class='index'>
     <h2>
+      <a href="/2014/04/26/transfer-to-middleman.html">Transfer to MiddleMan</a>
+      <span>
+        Apr 26
+      </span>
+    </h2>
+    <p><a href="http://jekyllrb.com/">Jekyll</a> みたいな静的サイトジェネレーターで「<a href="http://middlemanapp.com/">MiddleMan</a>」というのを発見し、ブログ以外にも普段の仕事なんかでも使えるかなと思って、切り替えてみた。で、また色々つっかえたので書いとく。</p>
+    
+    <p>つっかえた原因は、MiddleManのせいではなく、GithubPagesの仕様をちゃんと理解していなかったからだった。</p>
+    
+    <p>GitHubPagesは、そのリポジトリがProjectのサイトなのか、UserまたはOrganizationのサイトなのかによって、若干仕様が違うらしい。Projectサイトの場合は、<code>gh-pages</code>ブランチのコンテンツが表示され、User/Organizationサイトの場合は、<code>master</code>ブランチのコンテンツが表示されるらしい<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>。</p>
+    
+    <p>今回、middleman-deployを使って、<code>config.rb</code>で<code>gh-pages</code>ブランチをdeploy先に指定していたせいでサイトが表示されなくて困った。
+    前回までも、上記の仕様を知らずに、<code>gh-pages</code>ブランチを使っていたんだけど、どうもJekyllを使っていたからGitHub側できちんとdeployしてくれて表示ができていたということらしい。</p>
+    
+    <p>変な仕様だなと思うんだけど、まぁ確かにプロジェクトの方はメイン（master）はプロジェクトのソースコードで、ユーザー／Organizationの方はサイトがメインと考えられるから、まぁ納得。でも、ちょっと気づきにくいなぁ。</p>
+    
+    <p>あとは、<code>confg.rb</code>で</p>
+    
+    <p><code>rb
+    Time.zone = "Tokyo"
+    </code></p>
+    
+    <p>としてなくて、今書いてる記事がbuildされない（多分深夜だったからUTC時間では未来だと判定されたのだろう…）など、あったが、まぁ、まぁ。なにはともあれ、とりあえず公開までできたので、色々試していこうと思う。Jekyllでは、Octpressからコード整形プラグイン引っこ抜くなど、それなりに時間かかったんだけど、また振り出しです。がんばろー・・・っと。</p>
+    
+    <p>注：なんだか、前回は「ですます調」で書いたんだけど、なんか疲れたのでこんな感じで・・・</p>
+    <div class="footnotes">
+      <ol>
+        <li id="fn:1">
+          <p>参考 <a href="http://blog.coiney.com/2013/06/21/host-middleman-blog-on-github/">middleman-blogをgithubでホストする / Coiney Developer Blog</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+        </li>
+      </ol>
+    </div>
+    <h2>
       <a href="/2014/04/13/first-post.html">First Post</a>
       <span>
         Apr 13
