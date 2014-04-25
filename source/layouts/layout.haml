@@ -2,7 +2,7 @@
 %html
   %head
     %meta{ charset: "utf-8" }
-    %title = data.page.title || "The Middleman"
+    %title #{data.page.title} | Out of Memory
     = stylesheet_link_tag "normalize", "all"
     = javascript_include_tag  "all"
 

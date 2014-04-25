@@ -1,7 +1,7 @@
 ---
-title:  "First Post"
+title:  First Post
 date:   2014-04-13 01:43:42
-categories: jekyll update
+categories: Jekyll update GitHubPages
 ---
 
 ブログなんて何年ぶりかわからないけど、気になっていた[Jekyll](http://jekyllrb.com/)の勉強がてらはじめてみることにしました。記憶からこぼれ落ちそうな内容を、書き留めておく場所にしようかな？と思ったので、タイトルは「Out of My Memory」としてみます。
