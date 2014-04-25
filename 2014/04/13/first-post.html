@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>= data.page.title || "The Middleman"</title>
+    <link href="/mm/style/normalize.css" rel="stylesheet" type="text/css" /><link href="/mm/style/all.css" rel="stylesheet" type="text/css" />
+    <script src="/mm/script/all.js" type="text/javascript"></script>
+  </head>
+  <body class='x2014 x2014_04 x2014_04_13 x2014_04_13_first-post'>
+    <p>ブログなんて何年ぶりかわからないけど、気になっていた<a href="http://jekyllrb.com/">Jekyll</a>の勉強がてらはじめてみることにしました。記憶からこぼれ落ちそうな内容を、書き留めておく場所にしようかな？と思ったので、タイトルは「Out of My Memory」としてみます。</p>
+    
+    <p>さっそく、jekyll newした時に問題発生したので書き留めておきます。</p>
+    
+    <p>```sh
+    $ jekyll new mysite</p>
+    
+    <p>SafeYAML Warning
+      —————-</p>
+    
+    <p>You appear to have an outdated version of libyaml (0.1.4) installed on your system.</p>
+    
+    <p>Prior to 0.1.6, libyaml is vulnerable to a heap overflow exploit from malicious YAML payloads.</p>
+    
+    <p>For more info, see:
+      https://www.ruby-lang.org/en/news/2014/03/29/heap-overflow-in-yaml-uri-escape-parsing-cve-2014-2525/</p>
+    
+    <p>The easiest thing to do right now is probably to update Psych to the latest version and enable
+      the 'bundled-libyaml' option, which will install a vendored libyaml with the vulnerability patched:</p>
+    
+    <p>gem install psych – –enable-bundled-libyaml</p>
+    
+    <p>```</p>
+    
+    <p>rbenvを使っていたので、普通にrbenv installでまだ入れてなかった2.0.0を入れてから試してもダメだったので、変だと思ったのですが、
+    探すと<a href="http://stackoverflow.com/questions/22919318/fix-for-prior-to-0-1-6-libyaml-is-vulnerable-to-a-heap-overflow-exploit-from-m">stackoverflow</a>に解決方法を書いてくれている人がいました。ありがたい。</p>
+    
+    <p>まず、ruby-buildを更新してからrubyをビルドするとうまくいくようです。</p>
+    
+    <p><code>sh
+    $ rm -rf ~/.rbenv/plugins/ruby-build
+    $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+    $ rbenv install 2.0.0-p451
+    </code></p>
+    
+    <p>自分がどうしたか忘れましたが（さっそく…）、このあとにJekyllをインストールしてあげれば間違いないと思います。</p>
+    
+    <h1 id="my-first-impression-of-jekyll">My first impression of Jekyll</h1>
+    
+    <ul>
+      <li>最初は、Gemfileに色々書いて言ってたんだけど、github-pagesというのだけ入れればよかった。</li>
+      <li>Github Pagesで運用する場合はconfigにsourceの指定しても無効で、<a href="https://help.github.com/articles/using-jekyll-with-pages#configuration-overrides">必ずルートに設定を上書きされるらしい</a>。</li>
+      <li>まだ１つしか記事書いてないが、全体のスタイルなどの更新と、記事の更新がcommit上で一緒くたになってしまうのが、若干気持ち悪いかなぁ…</li>
+    </ul>
+  </body>
+</html>
