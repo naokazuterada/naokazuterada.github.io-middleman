@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/2014/04/13/first-post.html"/>
     <id>http://blog.url.com/2014/04/13/first-post.html</id>
     <published>2014-04-13T10:43:42+09:00</published>
-    <updated>2014-04-25T21:33:03+09:00</updated>
+    <updated>2014-04-26T00:35:31+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -62,18 +62,6 @@ $ rbenv install 2.0.0-p451
   &lt;li&gt;Github Pagesで運用する場合はconfigにsourceの指定しても無効で、&lt;a href="https://help.github.com/articles/using-jekyll-with-pages#configuration-overrides"&gt;必ずルートに設定を上書きされるらしい&lt;/a&gt;。&lt;/li&gt;
   &lt;li&gt;まだ１つしか記事書いてないが、全体のスタイルなどの更新と、記事の更新がcommit上で一緒くたになってしまうのが、若干気持ち悪いかなぁ…&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Example Article</title>
-    <link rel="alternate" href="http://blog.url.com/2012/01/01/example-article.html"/>
-    <id>http://blog.url.com/2012/01/01/example-article.html</id>
-    <published>2012-01-01T09:00:00+09:00</published>
-    <updated>2014-04-25T17:14:38+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;This is an example article. You probably want to delete it and write your own articles!&lt;/p&gt;
 </content>
   </entry>
 </feed>
