@@ -1,4 +1,23 @@
-/* line 3, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+/* line 5, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
 body {
   background: #BADBB5;
-  color: #662DAA; }
+  color: #662daa;
+  border-left: 8px solid #662daa;
+  border-right: 8px solid #662daa;
+  padding: 40px; }
+  /* line 13, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+  body:before, body:after {
+    content: '';
+    display: block;
+    background: #662daa;
+    width: 100%;
+    height: 8px;
+    position: fixed;
+    left: 0;
+    z-index: 9999; }
+  /* line 23, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+  body:before {
+    top: 0; }
+  /* line 26, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+  body:after {
+    bottom: 0; }
