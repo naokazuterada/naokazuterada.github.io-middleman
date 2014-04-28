@@ -8,8 +8,9 @@ category: update
 
 さっそく、jekyll newした時に問題発生したので書き留めておきます。
 
+
 ```sh
-$ jekyll new mysite
+jekyll new mysite
 
   SafeYAML Warning
   ----------------
@@ -28,15 +29,16 @@ $ jekyll new mysite
 
 ```
 
+
 rbenvを使っていたので、普通にrbenv installでまだ入れてなかった2.0.0を入れてから試してもダメだったので、変だと思ったのですが、
 探すと[stackoverflow](http://stackoverflow.com/questions/22919318/fix-for-prior-to-0-1-6-libyaml-is-vulnerable-to-a-heap-overflow-exploit-from-m)に解決方法を書いてくれている人がいました。ありがたい。
 
 まず、ruby-buildを更新してからrubyをビルドするとうまくいくようです。
 
 ```sh
-$ rm -rf ~/.rbenv/plugins/ruby-build
-$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-$ rbenv install 2.0.0-p451
+rm -rf ~/.rbenv/plugins/ruby-build
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+rbenv install 2.0.0-p451
 ```
 
 自分がどうしたか忘れましたが（さっそく…）、このあとにJekyllをインストールしてあげれば間違いないと思います。
