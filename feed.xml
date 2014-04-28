@@ -52,7 +52,7 @@ Time.zone = "Tokyo"
     <link rel="alternate" href="http://blog.url.com/2014/04/13/first-post.html"/>
     <id>http://blog.url.com/2014/04/13/first-post.html</id>
     <published>2014-04-13T00:00:00+09:00</published>
-    <updated>2014-04-26T01:08:05+09:00</updated>
+    <updated>2014-04-29T01:21:52+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -61,7 +61,7 @@ Time.zone = "Tokyo"
 &lt;p&gt;さっそく、jekyll newした時に問題発生したので書き留めておきます。&lt;/p&gt;
 
 &lt;p&gt;```sh
-$ jekyll new mysite&lt;/p&gt;
+jekyll new mysite&lt;/p&gt;
 
 &lt;p&gt;SafeYAML Warning
   —————-&lt;/p&gt;
@@ -86,9 +86,9 @@ $ jekyll new mysite&lt;/p&gt;
 &lt;p&gt;まず、ruby-buildを更新してからrubyをビルドするとうまくいくようです。&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;sh
-$ rm -rf ~/.rbenv/plugins/ruby-build
-$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-$ rbenv install 2.0.0-p451
+rm -rf ~/.rbenv/plugins/ruby-build
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+rbenv install 2.0.0-p451
 &lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;自分がどうしたか忘れましたが（さっそく…）、このあとにJekyllをインストールしてあげれば間違いないと思います。&lt;/p&gt;
