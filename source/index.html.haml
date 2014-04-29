@@ -1,1 +1,23 @@
-Top
+---
+/ pageable: false
+/ per_page: 5
+---
+
+- page_articles.each_with_index do |article, i|
+  %ul#articles
+    %li
+      %a{href:article.url}
+        %span.date
+          =article.date.strftime('%Y.%m.%e')
+        %span.title
+          = article.title
+    -# article.summary(140)
+
+- if paginate && num_pages > 1
+  %p= "Page" #{page_number} of #{num_pages}
+  - if prev_page
+    = link_to 'Previous page', prev_page
+
+-if paginate
+  -if next_page
+    %p = link_to 'Next page', next_page

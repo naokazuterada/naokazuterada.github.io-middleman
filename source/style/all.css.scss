@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import "compass/css3/border-radius";
+
 $colorA: #662DAA;
 // $colorB: #BADBB5;
 // $colorA: #000;
@@ -125,7 +127,7 @@ body {
   color: $colorA;
   border-left: 38px solid $colorA;
   border-right: 38px solid $colorA;
-  padding: 100px 40px;
+  padding: 120px 40px;
   font-family: atlas-grotesk, sans-serif;
   font-size: 11px;
   min-height: 100%;
@@ -181,4 +183,51 @@ body {
 
 code {
   font-family: source-code-pro;
+}
+
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+body.index {
+  ul#articles {
+    width: 700px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+
+    li {
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 40px;
+        margin-bottom: 40px;
+
+        .date {
+          display: block;
+          font-size: 90px;
+          font-weight: bold;
+        }
+        .title {
+          display: block;
+          margin-top: 20px;
+          padding: 10px;
+          @include border-radius(20px,20px);
+        }
+
+        &:hover {
+          
+          color: #FF20AF;
+          .date {
+            
+          }
+          .title {
+            background: #FF20AF;
+            color: $colorB;
+          }
+        }
+      }
+    }
+  }
 }
