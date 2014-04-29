@@ -20,5 +20,7 @@
           A
           %span 
             bout
+    -if current_article
+      %h1.title #{current_article.title}
     #wrap
       = yield

@@ -275,3 +275,23 @@ body.index {
     }
   }
 }
+
+body:not(.index):not(.about) {
+  h1.title {
+    color: #FF20AF;
+    font-size: 90px;
+    position: fixed;
+    z-index: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 100px;
+  }
+  #wrap{
+    position: relative;
+    z-index: 1;
+    margin-top: 120px;
+  }
+}
