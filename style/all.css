@@ -72,15 +72,23 @@
   font-style: italic;
   font-stretch: normal; }
 
-/* line 119, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+@font-face {
+  font-family: "fira-sans";
+  src: url("/font/FiraSans-Regular.eot");
+  src: url("/font/FiraSans-Regular.eot?#iefix") format("embedded-opentype"), url("/font/FiraSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
+
+/* line 131, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
 h1, h2, h3, h4, h5, h6 {
   font-size: 11px; }
 
-/* line 122, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+/* line 134, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
 a, a:visited {
   color: inherit; }
 
-/* line 125, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+/* line 137, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
 body {
   background: #efe8d5;
   color: #662daa;
@@ -90,7 +98,7 @@ body {
   font-family: atlas-grotesk, sans-serif;
   font-size: 11px;
   min-height: 100%; }
-  /* line 136, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+  /* line 148, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
   body:before, body:after {
     content: '';
     display: block;
@@ -100,66 +108,100 @@ body {
     position: fixed;
     left: 0;
     z-index: 9999; }
-  /* line 146, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+  /* line 158, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
   body:before {
     top: 0;
-    height: 76px; }
-  /* line 150, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+    height: 38px;
+    border-bottom: 10px solid #efe8d5; }
+  /* line 163, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
   body:after {
-    bottom: 0; }
-  /* line 154, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+    bottom: 0;
+    border-top: 10px solid #efe8d5; }
+  /* line 168, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
   body header {
-    position: fixed;
-    z-index: 10000;
-    top: 6px;
-    left: 0;
-    width: 100%;
-    color: #fff;
-    text-align: center; }
-    /* line 162, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+    color: #fff; }
+    /* line 172, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
     body header h1 {
-      font-size: 13px; }
-      /* line 164, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
-      body header h1 a {
-        text-decoration: none; }
-    /* line 169, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
-    body header nav a {
-      display: inline-block;
-      margin: 0 5px;
-      text-decoration: none; }
-      /* line 174, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
-      body header nav a:not(:first-child):before {
-        content: '-';
-        display: inline-block;
-        margin-right: 10px; }
+      text-align: right;
+      position: fixed;
+      bottom: 5px;
+      right: 12px;
+      z-index: 10000; }
+    /* line 180, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+    body header nav {
+      position: fixed;
+      z-index: 10000;
+      float: left;
+      text-align: left;
+      top: 60px;
+      left: 0;
+      font-size: 90px;
+      margin: 0; }
+      /* line 190, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+      body header nav a {
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+        margin-bottom: 0.4em; }
+        /* line 196, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+        body header nav a span {
+          opacity: 0;
+          -webkit-transition-duration: 300ms;
+          -moz-transition-duration: 300ms;
+          -o-transition-duration: 300ms;
+          transition-duration: 300ms; }
+        /* line 201, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+        body header nav a.index {
+          margin-left: 24px; }
+          /* line 203, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+          body header nav a.index span {
+            margin-left: -0.2em; }
+        /* line 207, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+        body header nav a.about {
+          margin-left: 4px; }
+          /* line 209, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+          body header nav a.about span {
+            margin-left: -0.2em; }
+        /* line 215, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+        body header nav a:hover span {
+          opacity: 1;
+          -webkit-transition-duration: 1000ms;
+          -moz-transition-duration: 1000ms;
+          -o-transition-duration: 1000ms;
+          transition-duration: 1000ms; }
 
-/* line 184, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+/* line 226, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
 code {
   font-family: source-code-pro; }
 
-/* line 188, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+/* line 230, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
 #wrap {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto; }
 
-/* line 194, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+/* line 236, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
 body.index ul#articles {
-  width: 700px;
+  width: 600px;
   margin: 0 auto;
+  padding: 0;
   list-style: none;
   text-align: center; }
-  /* line 201, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+  /* line 244, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
   body.index ul#articles li a {
     display: block;
     text-decoration: none;
     padding: 40px;
     margin-bottom: 40px; }
-    /* line 207, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+    /* line 250, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
     body.index ul#articles li a .date {
       display: block;
       font-size: 90px;
-      font-weight: bold; }
-    /* line 212, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+      font-weight: bold;
+      -webkit-transition-duration: 500;
+      -moz-transition-duration: 500;
+      -o-transition-duration: 500;
+      transition-duration: 500; }
+    /* line 256, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
     body.index ul#articles li a .title {
       display: block;
       margin-top: 20px;
@@ -167,10 +209,14 @@ body.index ul#articles {
       -webkit-border-radius: 20px 20px;
       -moz-border-radius: 20px / 20px;
       border-radius: 20px / 20px; }
-    /* line 219, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
-    body.index ul#articles li a:hover {
-      color: #FF20AF; }
-      /* line 225, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
-      body.index ul#articles li a:hover .title {
-        background: #FF20AF;
-        color: #efe8d5; }
+    /* line 265, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+    body.index ul#articles li a:hover .date {
+      color: #FF20AF;
+      -webkit-transition-duration: 500;
+      -moz-transition-duration: 500;
+      -o-transition-duration: 500;
+      transition-duration: 500; }
+    /* line 269, /Users/terada/Sites/naokazuterada.github.io/source/style/all.css.scss */
+    body.index ul#articles li a:hover .title {
+      background: #FF20AF;
+      color: #efe8d5; }
