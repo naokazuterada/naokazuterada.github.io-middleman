@@ -2,17 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Blog Name</title>
   <subtitle>Blog subtitle</subtitle>
-  <id>http://blog.url.com/</id>
-  <link href="http://blog.url.com/"/>
-  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <id>http://naokazuterada.com/</id>
+  <link href="http://naokazuterada.com/"/>
+  <link href="http://naokazuterada.com/feed.xml" rel="self"/>
   <updated>2014-04-26T00:00:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
   <entry>
     <title>Transfer to MiddleMan</title>
-    <link rel="alternate" href="http://blog.url.com/2014/04/26/transfer-to-middleman.html"/>
-    <id>http://blog.url.com/2014/04/26/transfer-to-middleman.html</id>
+    <link rel="alternate" href="http://naokazuterada.com/2014/04/26/transfer-to-middleman.html"/>
+    <id>http://naokazuterada.com/2014/04/26/transfer-to-middleman.html</id>
     <published>2014-04-26T00:00:00+09:00</published>
     <updated>2014-04-29T14:27:15+09:00</updated>
     <author>
@@ -49,8 +49,8 @@ Time.zone = "Tokyo"
   </entry>
   <entry>
     <title>First Post</title>
-    <link rel="alternate" href="http://blog.url.com/2014/04/13/first-post.html"/>
-    <id>http://blog.url.com/2014/04/13/first-post.html</id>
+    <link rel="alternate" href="http://naokazuterada.com/2014/04/13/first-post.html"/>
+    <id>http://naokazuterada.com/2014/04/13/first-post.html</id>
     <published>2014-04-13T00:00:00+09:00</published>
     <updated>2014-04-29T01:21:52+09:00</updated>
     <author>
