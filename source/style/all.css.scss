@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import "compass/css3/border-radius";
+@import "compass/css3/transition";
 
 $colorA: #662DAA;
 // $colorB: #BADBB5;
@@ -116,6 +117,17 @@ $colorB: #efe8d5;
   font-stretch: normal;
 }
 
+@font-face {
+  font-family: "fira-sans";
+  src: url("/font/FiraSans-Regular.eot");
+  src: url("/font/FiraSans-Regular.eot?#iefix") format("embedded-opentype"),
+       url("/font/FiraSans-Regular.woff") format("woff");
+  font-weight:  normal;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
 h1,h2,h3,h4,h5,h6 {
   font-size: 11px;
 }
@@ -145,39 +157,69 @@ body {
   }
   &:before {
     top: 0;
-    height: 76px;
+    height: 38px;
+    border-bottom: 10px solid $colorB;
   }
   &:after {
     bottom: 0;
+    border-top: 10px solid $colorB;
   }
 
   header {
-    position: fixed;
-    z-index: 10000;
-    top: 6px;
-    left: 0;
-    width: 100%;
+    
     color: #fff;
-    text-align: center;
+    
     h1 {
-      font-size: 13px;
-      a {
-        text-decoration: none;
-      }
+      text-align: right;
+      position: fixed;
+      bottom: 5px;
+      right: 12px;
+      z-index: 10000;
     }
-    nav {
-      a {
-        display: inline-block;
-        margin: 0 5px;
-        text-decoration: none;
 
-        &:not(:first-child):before{
-          content: '-';
-          display: inline-block;
-          margin-right: 10px;
+    nav {
+      position: fixed;
+      z-index: 10000;
+      float: left;
+      text-align: left;
+      top: 60px;
+      left: 0;
+      font-size: 90px;
+      margin: 0;
+
+      a {
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+        margin-bottom: 0.4em;
+
+        span {
+          opacity: 0;
+          @include transition-duration(300ms);
+        }
+        
+        &.index {
+          margin-left: 24px;
+          span {
+            margin-left: -0.2em;
+          }
+        }
+        &.about {
+          margin-left: 4px;
+          span {
+            margin-left: -0.2em;
+          }
+        }
+
+        &:hover {
+          span {
+            opacity: 1;
+            @include transition-duration(1000ms);
+          }
         }
       }
     }
+    
   }
 }
 
@@ -186,14 +228,15 @@ code {
 }
 
 #wrap {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 body.index {
   ul#articles {
-    width: 700px;
+    width: 600px;
     margin: 0 auto;
+    padding: 0;
     list-style: none;
     text-align: center;
 
@@ -208,6 +251,7 @@ body.index {
           display: block;
           font-size: 90px;
           font-weight: bold;
+          @include transition-duration(500);
         }
         .title {
           display: block;
@@ -218,9 +262,9 @@ body.index {
 
         &:hover {
           
-          color: #FF20AF;
           .date {
-            
+            color: #FF20AF;
+            @include transition-duration(500);
           }
           .title {
             background: #FF20AF;

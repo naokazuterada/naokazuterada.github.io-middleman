@@ -10,9 +10,15 @@
   %body{ class: page_classes }
     %header
       %h1
-        %a{href:'/'}
-          Naokazu Terda
+        © Naokazu Terada
       %nav
-        %a{href:'/about.html'} About
+        %a.index{href:'/'}
+          I
+          %span 
+            ndex
+        %a.about{href:'/about.html'}
+          A
+          %span 
+            bout
     #wrap
       = yield
