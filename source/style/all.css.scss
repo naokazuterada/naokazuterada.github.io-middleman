@@ -129,7 +129,7 @@ $colorB: #efe8d5;
 
 
 h1,h2,h3,h4,h5,h6 {
-  font-size: 11px;
+  font-size: 15px;
 }
 a,a:visited {
   color: inherit;
@@ -141,7 +141,7 @@ body {
   border-right: 38px solid $colorA;
   padding: 120px 40px;
   font-family: atlas-grotesk, sans-serif;
-  font-size: 11px;
+  font-size: 15px;
   min-height: 100%;
 
   &:before,
@@ -175,6 +175,7 @@ body {
       bottom: 5px;
       right: 12px;
       z-index: 10000;
+      font-size: 11px;
     }
 
     nav {
@@ -231,6 +232,7 @@ code {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 
 body.index {
   ul#articles {
