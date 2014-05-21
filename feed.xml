@@ -5,10 +5,43 @@
   <id>http://naokazuterada.com/</id>
   <link href="http://naokazuterada.com/"/>
   <link href="http://naokazuterada.com/feed.xml" rel="self"/>
-  <updated>2014-04-26T00:00:00+09:00</updated>
+  <updated>2014-05-22T00:16:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Long time, No see ...</title>
+    <link rel="alternate" href="http://naokazuterada.com/2014/05/22/long-time-no-see.html"/>
+    <id>http://naokazuterada.com/2014/05/22/long-time-no-see.html</id>
+    <published>2014-05-22T00:16:00+09:00</published>
+    <updated>2014-05-22T00:42:39+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;前回の記事から早１ヶ月が経過しようとしてる（アワアワ…）。前回記事書いたあたりからいきなり忙しくなって、放置状態になってしまってたので、やる気を無くさないように記事を書いとこ…。&lt;/p&gt;
+
+&lt;p&gt;ここ一ヶ月は、かなり久しぶりにActionScriptを書いていた。PC用のAirアプリで、音楽も絡んで内容的にはなかなか楽しい仕事だった。開発期間が短かったので、最初はかなり不安だったけど、意外にスムーズに進めることが出来て、修正以外の開発時間は結構短かった。&lt;/p&gt;
+
+&lt;p&gt;それにしても、AS久しぶりだった。たくさん書いてた頃は、WindowsだったからFlashDevelopというかなり秀逸な開発環境があって、自作クラスのコードヒントやプロジェクトテンプレートの機能など、開発を楽しくする要素盛りだくさんだったんだけど、今はもっぱらMacだし、この仕事のためにエディタ変えるのも嫌だったので、いつもどおりSublimeTextを使った。ビルドの設定だけして⌘+Bで別途立ち上げてるFlashに切り替えてプレビューするようにした。&lt;/p&gt;
+
+&lt;p&gt;ActionScript.sublime-build
+&lt;code&gt;javascript
+{
+  "cmd": ["osascript", "/Applications/Adobe FlashCC Preview.scpt"],
+  "selector": "source.actionscript"
+}
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;ほんで、&lt;a href="/file/Adobe%20FlashCC%20Preview.scpt"&gt;このファイル&lt;/a&gt;をApplicationsフォルダに入れておく。&lt;/p&gt;
+
+&lt;p&gt;やっぱり楽しいなAS。いや、でも、ASというかFlashなのかな？
+言語という意味では、ゆるくも固くも書ける感じがいいのはいいな。急いで作ることもできるし、きっちり仕様がためしながら作ることもできるので。swcは、ソースコード群がスッキリできていい。でも、packageという概念は、ドメインに合わせてディレクトリ掘ってかないと行けないとかが、昔も思ったけどめんどくさい。ライブラリとか自前のUtil系を揃えて置かないと結構面倒な部分もあった。これは、日頃から蓄積してないからなんだけど、昔作ったUtil系は役に立った。DropBoxに置いてて、はじめ探しても見つからなくて困ったので、これも今度GitHubにあげとこう。&lt;/p&gt;
+
+&lt;p&gt;今回、新しく使ってみたのは&lt;a href="http://napephys.com"&gt;nape&lt;/a&gt;という物理エンジン。Box2Dより高速ということで選んでみたけど、あんまり巷にサンプルコードがないので、オフィシャルサイトのサンプルやドキュメントに頼るしかない。今回それほど深く理解するとこまで使ってないけど、サンプル見ると色々できるようなので、どこらへんまでは簡単にできるのかとか知っておくと、今後色々応用できそうだと思った。&lt;/p&gt;
+
+&lt;p&gt;というわけで、久しぶり！そしてまたね！ ActionScript&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Transfer to MiddleMan</title>
     <link rel="alternate" href="http://naokazuterada.com/2014/04/26/transfer-to-middleman.html"/>
