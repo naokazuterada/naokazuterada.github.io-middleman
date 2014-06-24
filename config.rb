@@ -50,10 +50,9 @@ page "/feed.xml", layout: false
 # Compass
 ###
 
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+compass_config do |config|
+  config.output_style = :compact
+end
 
 ###
 # Page options, layouts, aliases and proxies
@@ -79,12 +78,6 @@ page "/feed.xml", layout: false
 ###
 # Helpers
 ###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Reload the browser automatically whenever files change
-activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -119,6 +112,10 @@ configure :build do
   # /my_project/stylesheets/normalize.css
   # のようになる
   # activate :asset_host, :host => "/my_project"
+end
+
+configure :development do
+  activate :livereload
 end
 
 # デプロイ設定
