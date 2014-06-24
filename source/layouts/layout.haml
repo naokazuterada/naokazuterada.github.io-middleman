@@ -25,3 +25,5 @@
       %h1.title #{current_article.title}
     #wrap
       = yield
+    
+    = partial 'layouts/disqus' if (page_classes != 'index') && (page_classes != 'about')
