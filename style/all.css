@@ -1,260 +1,85 @@
-@font-face {
-  font-family: "source-code-pro";
-  src: url("/font/SourceCodePro-ExtraLight.eot");
-  src: url("/font/SourceCodePro-ExtraLight.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-ExtraLight.woff") format("woff"), url("/font/SourceCodePro-ExtraLight.ttf") format("truetype"), url("/font/SourceCodePro-ExtraLight.svg#source-code-pro") format("svg");
-  font-weight: 100;
-  font-style: normal;
-  font-stretch: normal; }
+@font-face { font-family: "source-code-pro"; src: url("/font/SourceCodePro-ExtraLight.eot"); src: url("/font/SourceCodePro-ExtraLight.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-ExtraLight.woff") format("woff"), url("/font/SourceCodePro-ExtraLight.ttf") format("truetype"), url("/font/SourceCodePro-ExtraLight.svg#source-code-pro") format("svg"); font-weight: 100; font-style: normal; font-stretch: normal; }
 
-@font-face {
-  font-family: "source-code-pro";
-  src: url("/font/SourceCodePro-Light.eot");
-  src: url("/font/SourceCodePro-Light.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-Light.woff") format("woff"), url("/font/SourceCodePro-Light.ttf") format("truetype"), url("/font/SourceCodePro-Light.svg#source-code-pro") format("svg");
-  font-weight: 200;
-  font-style: normal;
-  font-stretch: normal; }
+@font-face { font-family: "source-code-pro"; src: url("/font/SourceCodePro-Light.eot"); src: url("/font/SourceCodePro-Light.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-Light.woff") format("woff"), url("/font/SourceCodePro-Light.ttf") format("truetype"), url("/font/SourceCodePro-Light.svg#source-code-pro") format("svg"); font-weight: 200; font-style: normal; font-stretch: normal; }
 
-@font-face {
-  font-family: "source-code-pro";
-  src: url("/font/SourceCodePro-Regular.eot");
-  src: url("/font/SourceCodePro-Regular.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-Regular.woff") format("woff"), url("/font/SourceCodePro-Regular.ttf") format("truetype"), url("/font/SourceCodePro-Regular.svg#source-code-pro") format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal; }
+@font-face { font-family: "source-code-pro"; src: url("/font/SourceCodePro-Regular.eot"); src: url("/font/SourceCodePro-Regular.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-Regular.woff") format("woff"), url("/font/SourceCodePro-Regular.ttf") format("truetype"), url("/font/SourceCodePro-Regular.svg#source-code-pro") format("svg"); font-weight: 300; font-style: normal; font-stretch: normal; }
 
-@font-face {
-  font-family: "source-code-pro";
-  src: url("/font/SourceCodePro-Medium.eot");
-  src: url("/font/SourceCodePro-Medium.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-Medium.woff") format("woff"), url("/font/SourceCodePro-Medium.ttf") format("truetype"), url("/font/SourceCodePro-Medium.svg#source-code-pro") format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal; }
+@font-face { font-family: "source-code-pro"; src: url("/font/SourceCodePro-Medium.eot"); src: url("/font/SourceCodePro-Medium.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-Medium.woff") format("woff"), url("/font/SourceCodePro-Medium.ttf") format("truetype"), url("/font/SourceCodePro-Medium.svg#source-code-pro") format("svg"); font-weight: 400; font-style: normal; font-stretch: normal; }
 
-@font-face {
-  font-family: "source-code-pro";
-  src: url("/font/SourceCodePro-Semibold.eot");
-  src: url("/font/SourceCodePro-Semibold.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-Semibold.woff") format("woff"), url("/font/SourceCodePro-Semibold.ttf") format("truetype"), url("/font/SourceCodePro-Semibold.svg#source-code-pro") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal; }
+@font-face { font-family: "source-code-pro"; src: url("/font/SourceCodePro-Semibold.eot"); src: url("/font/SourceCodePro-Semibold.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-Semibold.woff") format("woff"), url("/font/SourceCodePro-Semibold.ttf") format("truetype"), url("/font/SourceCodePro-Semibold.svg#source-code-pro") format("svg"); font-weight: 500; font-style: normal; font-stretch: normal; }
 
-@font-face {
-  font-family: "source-code-pro";
-  src: url("/font/SourceCodePro-Bold.eot");
-  src: url("/font/SourceCodePro-Bold.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-Bold.woff") format("woff"), url("/font/SourceCodePro-Bold.ttf") format("truetype"), url("/font/SourceCodePro-Bold.svg#source-code-pro") format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal; }
+@font-face { font-family: "source-code-pro"; src: url("/font/SourceCodePro-Bold.eot"); src: url("/font/SourceCodePro-Bold.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-Bold.woff") format("woff"), url("/font/SourceCodePro-Bold.ttf") format("truetype"), url("/font/SourceCodePro-Bold.svg#source-code-pro") format("svg"); font-weight: 600; font-style: normal; font-stretch: normal; }
 
-@font-face {
-  font-family: "source-code-pro";
-  src: url("/font/SourceCodePro-Black.eot");
-  src: url("/font/SourceCodePro-Black.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-Black.woff") format("woff"), url("/font/SourceCodePro-Black.ttf") format("truetype"), url("/font/SourceCodePro-Black.svg#source-code-pro") format("svg");
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal; }
+@font-face { font-family: "source-code-pro"; src: url("/font/SourceCodePro-Black.eot"); src: url("/font/SourceCodePro-Black.eot?#iefix") format("embedded-opentype"), url("/font/SourceCodePro-Black.woff") format("woff"), url("/font/SourceCodePro-Black.ttf") format("truetype"), url("/font/SourceCodePro-Black.svg#source-code-pro") format("svg"); font-weight: 700; font-style: normal; font-stretch: normal; }
 
-@font-face {
-  font-family: "atlas-grotesk";
-  src: url("/font/AtlasGrotesk-Regular-Web.eot");
-  src: url("/font/AtlasGrotesk-Regular-Web.eot?#iefix") format("embedded-opentype"), url("/font/AtlasGrotesk-Regular-Web.woff") format("woff"), url("/font/AtlasGrotesk-Regular-Web.ttf") format("truetype"), url("/font/AtlasGrotesk-Regular-Web.svg#atlas-grotesk") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal; }
+@font-face { font-family: "atlas-grotesk"; src: url("/font/AtlasGrotesk-Regular-Web.eot"); src: url("/font/AtlasGrotesk-Regular-Web.eot?#iefix") format("embedded-opentype"), url("/font/AtlasGrotesk-Regular-Web.woff") format("woff"), url("/font/AtlasGrotesk-Regular-Web.ttf") format("truetype"), url("/font/AtlasGrotesk-Regular-Web.svg#atlas-grotesk") format("svg"); font-weight: normal; font-style: normal; font-stretch: normal; }
 
-@font-face {
-  font-family: "atlas-grotesk";
-  src: url("/font/AtlasGrotesk-RegularItalic-Web.eot");
-  src: url("/font/AtlasGrotesk-RegularItalic-Web.eot?#iefix") format("embedded-opentype"), url("/font/AtlasGrotesk-RegularItalic-Web.woff") format("woff"), url("/font/AtlasGrotesk-RegularItalic-Web.ttf") format("truetype"), url("/font/AtlasGrotesk-RegularItalic-Web.svg#atlas-grotesk") format("svg");
-  font-weight: normal;
-  font-style: italic;
-  font-stretch: normal; }
+@font-face { font-family: "atlas-grotesk"; src: url("/font/AtlasGrotesk-RegularItalic-Web.eot"); src: url("/font/AtlasGrotesk-RegularItalic-Web.eot?#iefix") format("embedded-opentype"), url("/font/AtlasGrotesk-RegularItalic-Web.woff") format("woff"), url("/font/AtlasGrotesk-RegularItalic-Web.ttf") format("truetype"), url("/font/AtlasGrotesk-RegularItalic-Web.svg#atlas-grotesk") format("svg"); font-weight: normal; font-style: italic; font-stretch: normal; }
 
-@font-face {
-  font-family: "atlas-grotesk";
-  src: url("/font/AtlasGrotesk-Bold-Web.eot");
-  src: url("/font/AtlasGrotesk-Bold-Web.eot?#iefix") format("embedded-opentype"), url("/font/AtlasGrotesk-Bold-Web.woff") format("woff"), url("/font/AtlasGrotesk-Bold-Web.ttf") format("truetype"), url("/font/AtlasGrotesk-Bold-Web.svg#atlas-grotesk") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal; }
+@font-face { font-family: "atlas-grotesk"; src: url("/font/AtlasGrotesk-Bold-Web.eot"); src: url("/font/AtlasGrotesk-Bold-Web.eot?#iefix") format("embedded-opentype"), url("/font/AtlasGrotesk-Bold-Web.woff") format("woff"), url("/font/AtlasGrotesk-Bold-Web.ttf") format("truetype"), url("/font/AtlasGrotesk-Bold-Web.svg#atlas-grotesk") format("svg"); font-weight: bold; font-style: normal; font-stretch: normal; }
 
-@font-face {
-  font-family: "atlas-grotesk";
-  src: url("/font/AtlasGrotesk-BoldItalic-Web.eot");
-  src: url("/font/AtlasGrotesk-BoldItalic-Web.eot?#iefix") format("embedded-opentype"), url("/font/AtlasGrotesk-BoldItalic-Web.woff") format("woff"), url("/font/AtlasGrotesk-BoldItalic-Web.ttf") format("truetype"), url("/font/AtlasGrotesk-BoldItalic-Web.svg#atlas-grotesk") format("svg");
-  font-weight: bold;
-  font-style: italic;
-  font-stretch: normal; }
+@font-face { font-family: "atlas-grotesk"; src: url("/font/AtlasGrotesk-BoldItalic-Web.eot"); src: url("/font/AtlasGrotesk-BoldItalic-Web.eot?#iefix") format("embedded-opentype"), url("/font/AtlasGrotesk-BoldItalic-Web.woff") format("woff"), url("/font/AtlasGrotesk-BoldItalic-Web.ttf") format("truetype"), url("/font/AtlasGrotesk-BoldItalic-Web.svg#atlas-grotesk") format("svg"); font-weight: bold; font-style: italic; font-stretch: normal; }
 
-@font-face {
-  font-family: "fira-sans";
-  src: url("/font/FiraSans-Regular.eot");
-  src: url("/font/FiraSans-Regular.eot?#iefix") format("embedded-opentype"), url("/font/FiraSans-Regular.woff") format("woff"), url("/font/FiraSans-Regular.ttf") format("truetype"), url("/font/FiraSans-Regular.svg#fira-sans") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal; }
+@font-face { font-family: "fira-sans"; src: url("/font/FiraSans-Regular.eot"); src: url("/font/FiraSans-Regular.eot?#iefix") format("embedded-opentype"), url("/font/FiraSans-Regular.woff") format("woff"), url("/font/FiraSans-Regular.ttf") format("truetype"), url("/font/FiraSans-Regular.svg#fira-sans") format("svg"); font-weight: normal; font-style: normal; font-stretch: normal; }
 
 /* line 35, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-h1, h2, h3, h4, h5, h6 {
-  font-size: 15px; }
+h1, h2, h3, h4, h5, h6 { font-size: 15px; }
 
 /* line 38, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-a, a:visited {
-  color: inherit; }
+a, a:visited { color: inherit; }
 
 /* line 41, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-body {
-  background: #efe8d5;
-  color: #662daa;
-  border-left: 38px solid #662daa;
-  border-right: 38px solid #662daa;
-  padding: 120px 40px;
-  font-family: atlas-grotesk, sans-serif;
-  font-size: 15px;
-  min-height: 100%; }
-  /* line 51, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-  body:before, body:after {
-    content: "";
-    display: block;
-    background: #662daa;
-    width: 100%;
-    height: 38px;
-    position: fixed;
-    left: 0;
-    z-index: 9999; }
-  /* line 62, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-  body:before {
-    top: 0;
-    height: 38px;
-    border-bottom: 10px solid #efe8d5; }
-  /* line 67, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-  body:after {
-    bottom: 0;
-    border-top: 10px solid #efe8d5; }
-  /* line 71, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-  body header {
-    color: white; }
-    /* line 75, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-    body header h1 {
-      text-align: right;
-      position: fixed;
-      bottom: 5px;
-      right: 12px;
-      z-index: 10000;
-      font-size: 11px; }
-    /* line 83, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-    body header nav {
-      position: fixed;
-      z-index: 10000;
-      float: left;
-      text-align: left;
-      top: 60px;
-      left: 0;
-      font-size: 90px;
-      margin: 0; }
-      /* line 93, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-      body header nav a {
-        display: block;
-        font-weight: bold;
-        text-decoration: none;
-        margin-bottom: 0.4em; }
-        /* line 99, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-        body header nav a span {
-          opacity: 0;
-          -webkit-transition-duration: 300ms;
-          -moz-transition-duration: 300ms;
-          -o-transition-duration: 300ms;
-          transition-duration: 300ms; }
-        /* line 103, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-        body header nav a.index {
-          margin-left: 24px; }
-          /* line 105, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-          body header nav a.index span {
-            margin-left: -0.2em; }
-        /* line 108, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-        body header nav a.about {
-          margin-left: 4px; }
-          /* line 110, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-          body header nav a.about span {
-            margin-left: -0.2em; }
-        /* line 114, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-        body header nav a:hover span {
-          opacity: 1;
-          -webkit-transition-duration: 1000ms;
-          -moz-transition-duration: 1000ms;
-          -o-transition-duration: 1000ms;
-          transition-duration: 1000ms; }
+body { background: #efe8d5; color: #662daa; border-left: 38px solid #662daa; border-right: 38px solid #662daa; padding: 120px 40px; font-family: atlas-grotesk, sans-serif; font-size: 15px; min-height: 100%; }
+/* line 51, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body:before, body:after { content: ""; display: block; background: #662daa; width: 100%; height: 38px; position: fixed; left: 0; z-index: 9999; }
+/* line 62, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body:before { top: 0; height: 38px; border-bottom: 10px solid #efe8d5; }
+/* line 67, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body:after { bottom: 0; border-top: 10px solid #efe8d5; }
+/* line 71, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body header { color: white; }
+/* line 75, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body header h1 { text-align: right; position: fixed; bottom: 5px; right: 12px; z-index: 10000; font-size: 11px; }
+/* line 83, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body header nav { position: fixed; z-index: 10000; float: left; text-align: left; top: 60px; left: 0; font-size: 90px; margin: 0; }
+/* line 93, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body header nav a { display: block; font-weight: bold; text-decoration: none; margin-bottom: 0.4em; }
+/* line 99, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body header nav a span { opacity: 0; -webkit-transition-duration: 300ms; -moz-transition-duration: 300ms; -o-transition-duration: 300ms; transition-duration: 300ms; }
+/* line 103, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body header nav a.index { margin-left: 24px; }
+/* line 105, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body header nav a.index span { margin-left: -0.2em; }
+/* line 108, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body header nav a.about { margin-left: 4px; }
+/* line 110, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body header nav a.about span { margin-left: -0.2em; }
+/* line 114, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body header nav a:hover span { opacity: 1; -webkit-transition-duration: 1000ms; -moz-transition-duration: 1000ms; -o-transition-duration: 1000ms; transition-duration: 1000ms; }
 
 /* line 118, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-code {
-  font-family: source-code-pro; }
+code { font-family: source-code-pro; }
 
 /* line 121, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-#wrap,
-#disqus_thread {
-  max-width: 1000px;
-  margin: 0 auto; }
+#wrap, #disqus_thread { max-width: 1000px; margin: 0 auto; }
 
 /* line 125, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-#disqus_thread {
-  margin-top: 120px; }
+#disqus_thread { margin-top: 120px; }
 
 /* line 129, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-body.index ul#articles {
-  width: 600px;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  text-align: center; }
-  /* line 137, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-  body.index ul#articles li a {
-    display: block;
-    text-decoration: none;
-    padding: 40px;
-    margin-bottom: 40px; }
-    /* line 143, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-    body.index ul#articles li a .date {
-      display: block;
-      font-size: 90px;
-      font-weight: bold;
-      -webkit-transition-duration: 500;
-      -moz-transition-duration: 500;
-      -o-transition-duration: 500;
-      transition-duration: 500; }
-    /* line 149, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-    body.index ul#articles li a .title {
-      display: block;
-      margin-top: 20px;
-      padding: 10px;
-      -webkit-border-radius: 20px 20px;
-      -moz-border-radius: 20px / 20px;
-      border-radius: 20px / 20px; }
-    /* line 158, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-    body.index ul#articles li a:hover .date {
-      color: #ff20af;
-      -webkit-transition-duration: 500;
-      -moz-transition-duration: 500;
-      -o-transition-duration: 500;
-      transition-duration: 500; }
-    /* line 162, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-    body.index ul#articles li a:hover .title {
-      background: #ff20af;
-      color: #efe8d5; }
+body.index ul#articles { width: 600px; margin: 0 auto; padding: 0; list-style: none; text-align: center; }
+/* line 137, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body.index ul#articles li a { display: block; text-decoration: none; padding: 40px; margin-bottom: 40px; }
+/* line 143, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body.index ul#articles li a .date { display: block; font-size: 90px; font-weight: bold; -webkit-transition-duration: 500; -moz-transition-duration: 500; -o-transition-duration: 500; transition-duration: 500; }
+/* line 149, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body.index ul#articles li a .title { display: block; margin-top: 20px; padding: 10px; -webkit-border-radius: 20px 20px; -moz-border-radius: 20px / 20px; border-radius: 20px / 20px; }
+/* line 158, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body.index ul#articles li a:hover .date { color: #ff20af; -webkit-transition-duration: 500; -moz-transition-duration: 500; -o-transition-duration: 500; transition-duration: 500; }
+/* line 162, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
+body.index ul#articles li a:hover .title { background: #ff20af; color: #efe8d5; }
 
 /* line 167, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-body:not(.index):not(.about) h1.title {
-  color: #ff20af;
-  font-size: 90px;
-  position: fixed;
-  z-index: 0;
-  text-align: center;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  top: 100px; }
+body:not(.index):not(.about) h1.title { color: #ff20af; font-size: 90px; position: fixed; z-index: 0; text-align: center; width: 100%; margin: 0; padding: 0; left: 0; top: 100px; }
 /* line 179, /Users/terada/Sites/naokazuterada.github.io/source/style/all.sass */
-body:not(.index):not(.about) #wrap {
-  position: relative;
-  z-index: 1;
-  margin-top: 120px; }
+body:not(.index):not(.about) #wrap { position: relative; z-index: 1; margin-top: 120px; }
